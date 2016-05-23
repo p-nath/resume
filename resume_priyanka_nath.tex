@@ -1,0 +1,104 @@
+\documentclass[a4paper,10pt]{article}
+%-----------------------------------------------------------
+% PDF setup 
+\usepackage{ifpdf}
+\ifpdf
+  \usepackage[pdftex]{hyperref}
+  %\usepackage[hidelinks]{hyperref}
+\else
+  \usepackage[hypertex]{hyperref}
+\fi
+
+\usepackage{changepage}
+\usepackage[top=0.75in, bottom=0.75in, left=0.55in, right=0.85in]{geometry}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{palatino}
+\usepackage{tabularx}
+\fontfamily{SansSerif}
+\selectfont
+
+\usepackage[T1]{fontenc}
+\usepackage
+%[ansinew]
+[utf8]
+{inputenc}
+
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.75}
+\textheight=9.75in
+\raggedbottom
+
+\setlength{\tabcolsep}{0in}
+\newcommand{\isep}{-2 pt}
+\newcommand{\lsep}{-0.5cm}
+\newcommand{\psep}{-0.6cm}
+\renewcommand{\labelitemii}{$\circ$}
+
+\pagestyle{empty}
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{0.99\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+%\newcommand{\resheading}[1]{{\small\colorbox{mygrey}{\begin{minipage}{0.99\textwidth}{\textbf{#1\vphantom{p&%\^E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[3]{
+\begin{tabular*}{6.62in}{l @{\extracolsep{\fill}} r}
+	\textsc{{\textbf{#1}}} & \textsc{\textit{[#2]}} \\
+\end{tabular*}\vspace{-8pt}}
+%-----------------------------------------------------------
+
+\begin{document}
+\hspace{0.5cm}\\[-0.2cm]
+
+\textbf{\huge {Priyanka Nath}} \\\\
+\indent 6/83 Bijoygarh, Jadavpur, \\
+\indent Kolkata -- 700032, India.\\
+\indent {email:} \href{mailto: pnath.it@gmail.com}{\textbf{pnath.it@gmail.com}} \\
+\indent mobile: \textbf{+91 990 321 5630} \\\\
+
+\resheading{\textbf{Objective} }\\\\[\lsep]
+
+\begin{adjustwidth}{15pt}{0pt}
+Seeking a summer internship in computer science as an opportunity to learn how to undertake research and enhance my skills \& knowledge. My interests lie broadly but not limited to the fields of machine learning and pattern recognition, it's applications like handwriting recognition, image processing/computer vision.\\\\
+\end{adjustwidth}
+
+
+\resheading{\textbf{Education} }\\\\[\lsep]\\[-0.3cm]
+
+\indent
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{KIIT University --} Bhubaneshwar, India & \small{\emph{July, 2015 - Present}}\\
+\emph{Bachelor of Technology, Information Technology} & \small{\emph{Current GPA: 8.85 / 10.0}}\\
+\end{tabular*}\\\\
+
+\indent
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{South Point High School --} Kolkata, India\\[0.1cm]
+{All India Senior School Certificate Examination, CBSE (Grade 12)} & \small{\emph{June, 2015 - 76,2\%}} \\
+\emph{Stream: Science with Computer Science as additional subject}\\[0.15cm]
+{Secondary Examination, WBBSE (Grade 10)} & \small{\emph{May, 2013 - 87.42\%}} \\\\
+\end{tabular*}
+
+
+\resheading{\textbf{Technical Skills} }\\\\[\lsep]
+
+\indent\textbf{Programming -- }Coded mainly in \textbf{C, Python.} Proficient in coding with C++. Working Knowledge of Java.\\
+\indent\textbf{Web -- } HTML, CSS\\\\
+
+\resheading{\textbf{Relevant Courses Taken} }\\\\[\lsep]
+
+\indent Linear Algebra, Introduction to Computer Science, Object Oriented Programming, Probability \& Statistics\\[0.1cm]
+\indent Taking online MOOC courses on algorithms and data structures in MIT OCW and Coursera.\\\\
+
+
+\resheading{\textbf{Honors \& Achievements}}\\[\lsep]\\[-0.2cm]
+\begin{itemize}
+\item {Secured a perfect score (100\%) in Mathematics in state-wide Secondary Examination, 2013 among 1,020,000 students.}
+\item {Awarded Chitroprobha Upadhi Certification by Bengal Music College, Kolkata, India in 2012 on completing a 6--year course on Painting.}
+\item {Selected as one of 20 student judges from MP Birla group of schools for the cultural committee MP Birla Puja Utkarsh Samman 2014.}
+\item {Secured the highest grade "O" in Programming in C (Introduction to Computer Science) and Mathematics in B. Tech. 1st Semester.}
+\end{itemize}
+
+
+\end{document}
+
